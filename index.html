@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Calendar</title>
+    <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- <div id="search-calendar"></div> -->
+
+    <div class="wrapper">
+        <img src="./college-students-different-ethnicities-cramming.jpg" alt="">
+    </div>
+
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendar = new ej.calendars.Calendar({
+                change: function (args) {
+                    console.log('Day clicked', args);
+                    alert('Day clicked');
+                }
+            });
+            calendar.appendTo('#search-calendar');
+        });
+    </script>
+</body>
+</html>
